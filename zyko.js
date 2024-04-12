@@ -345,7 +345,7 @@ return crypto.randomBytes(size).toString('hex').slice(0, size)
 const color = (text, color) => { return !color ? chalk.green(text) : chalk.keyword(color)(text) }
 
 const reply = (teks) => {
-return zyko.sendMessage(from, { text: teks, contextInfo:{"externalAdReply": {"title": `DEVELOPER ${namabot}`,"body": `Selamat ${waktuucapan} kak ${pushname}`, "previewType": "PHOTO","thumbnailUrl": 'https://telegra.ph/file/46ef83ea6db7881b66cf7.jpg', "thumbnail": thumb,"sourceUrl": sgc }}}, { quoted:m})} 
+return zyko.sendMessage(from, { text: teks, contextInfo:{"externalAdReply": {"title": `Developer ${namabot}`,"body": `Selamat ${waktuucapan} kak ${pushname}`, "previewType": "PHOTO","thumbnailUrl": 'https://telegra.ph/file/46ef83ea6db7881b66cf7.jpg', "thumbnail": thumb,"sourceUrl": sgc }}}, { quoted:m})} 
 
 
 
