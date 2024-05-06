@@ -1212,30 +1212,6 @@ let value = anu.slice(1)
 zyko.sendMessage(m.chat, { poll: { name: name, values: value, selectableCount: 1 }})
 }
 break
-case "getsw": case "sw": {
-            if (zyko.messages["status@broadcast"].array.length === 0) throw "Gaada 1 status pun"
-            let contacts = Object.values(zyko.contacts)
-            let [who, value] = m.text.split(/[,|\-+&]/)
-            value = value?.replace(/\D+/g, "")
-
-            let sender
-            if (m.mentions.length !== 0) sender = m.mentions[0]
-            else if (m.text) sender = contacts.find(v =me, v.verifiedName, v.notify].some(name => name && name.toLowerCase().includes(who.toLowerCase())))?.id
-
-            let stories = zyko.messages["status@broadcast"].array
-            let story = stories.filter(v => v.key && v.key.participant === sender || v.participant === sender).filter(v => v.message && v.message.protocolMessage?.type !== 0)
-            if (story.length === 0) throw "Gaada sw nya"
-            if (value) {
-               if (story.length < value) throw "Jumlahnya ga sampe segitu"
-               await m.reply({ forward: story[value - 1], force: true })
-            } else {
-               for (let msg of story) {
-                  await delay(1500)
-                  await m.reply({ forward: msg, force: true })
-               }
-            }
-         }
-            break
          case "listsw": {
             if (zyko.messages["status@broadcast"].array.length === 0) throw "Gaada 1 status pun"
             let stories = zyko.messages["status@broadcast"].array
