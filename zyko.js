@@ -1204,7 +1204,7 @@ zyko.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} telah kembali dari
 
 //=================================================//
 switch (command) {
-case 'sewa': {
+case 'sewa': 
 		(async() => {
 const { proto, generateWAMessageFromContent, prepareWAMessageMedia } = require("@whiskeysockets/baileys") 
 	const user = await conn.getName(m.sender)
