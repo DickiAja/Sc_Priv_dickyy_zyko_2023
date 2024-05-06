@@ -1277,8 +1277,8 @@ const msg = generateWAMessageFromContent(m.chat, {
 await conn.relayMessage(msg.key.remoteJid, msg.message, {
   messageId: msg.key.id
 })
-		}
-		break
+}
+break
 case 'poll': {
 	if(!text) return m.reply(`Contoh: ${prefix+command} Besok main gk?|Ayo aja|Ga ah malas`) 
 let anu = text.split("|") 
