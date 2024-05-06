@@ -1204,6 +1204,80 @@ zyko.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} telah kembali dari
 
 //=================================================//
 switch (command) {
+		(async() => {
+const { proto, generateWAMessageFromContent, prepareWAMessageMedia } = require("@whiskeysockets/baileys") 
+	const user = await conn.getName(m.sender)
+const msg = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+    message: {
+      messageContextInfo: {
+        deviceListMetadata: {},
+        deviceListMetadataVersion: 2
+      },
+      interactiveMessage: proto.Message.InteractiveMessage.fromObject({
+        body: proto.Message.InteractiveMessage.Body.fromObject({
+          text: `Halo Kak ${user}, Ini List Sewa Ku, Kalo Minat Langsung Pencet Tombol Dibawah`
+        }),
+        footer: proto.Message.InteractiveMessage.Footer.fromObject({
+          text: "> NotMe-Botz MD"
+        }),
+        header: proto.Message.InteractiveMessage.Header.fromObject({
+          title: "test",
+          subtitle: "test",
+          hasMediaAttachment: false
+        }),
+        carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
+          cards: [
+            {
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+                text: `> *7Days : 6K*\n> *14Days : 10K*\n> *30Days : 20K*\n> *Permanent : 35K*\n\n> *</> Benefit Premium </>*\n\n> *Get Unlimited Limit*\n> *Free Add To Group(1x)*\n> *Get Access All Feature*`
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+                text: `> SunShine`
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `> [ *PREMIUM BOT* ]`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/f5d7192eea4848b112d7b.jpg" } }, { upload: conn.waUploadToServer })) 
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+                  {
+                                        "name": "cta_url",
+                                "buttonParamsJson": "{\"display_text\":\"Click Here\",\"url\":\"https://wa.me/6282393307733?text=bang+mau+sewa+bot+yang+7hari\",\"merchant_url\":\"https://wa.me/6282393307733?text=bang+awner+sev+aku+dong\"}"
+                  }]
+              })
+            },
+            {
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+                text: `> *7Days : 5K*\n> *14Days : 10K*\n> *30Days : 20K*\n> *Permanent : 35K*\n\n> *</> Benefit Sewa BOT </>*\n\n> *Get Free Premium(3days)*\n> *Get 100 Limit(s)*\n> *Access All Feature(3Days)*`
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+                text: `> NotMe-Botz MD`
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `> [ *SEWA BOT* ]`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/4fcd3b3674f6e3d1325b9.jpg" } }, { upload: conn.waUploadToServer })) 
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+                  {
+                    "name": "cta_url",
+                                "buttonParamsJson": "{\"display_text\":\"Click Here\",\"url\":\"https://wa.me/6282393307733?text=bang+mau+sewa+bot+yang+7hari\",\"merchant_url\":\"https://wa.me/6282393307733?text=bang+awner+sev+aku+dong\"}"
+                  }]
+              })
+            }
+          ]
+        })
+      })
+    }
+  }
+}, {})
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, {
+  messageId: msg.key.id
+})
+})()
+		break
 case 'poll': {
 	if(!text) return m.reply(`Contoh: ${prefix+command} Besok main gk?|Ayo aja|Ga ah malas`) 
 let anu = text.split("|") 
