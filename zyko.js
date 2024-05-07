@@ -1351,7 +1351,6 @@ zyko.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quot
 break
 //menu
 case 'menu': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let imgr = pickRandom(flaaa)
 let all = `
 Hello ${pushname}, ${waktuucapan}, I am a WhatsApp botz that comes with cool features like download tiktok, create stickers, search for songs, and much more I'm here to help you, in various ways, including sending, and etc. The available features are below
@@ -1438,7 +1437,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'Menuowner': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1502,7 +1500,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menugroup': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1556,7 +1553,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menugame': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1600,7 +1596,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menurpg': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1648,7 +1643,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuexp': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1683,7 +1677,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menufun': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1775,7 +1768,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuinternet': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1828,7 +1820,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menunsfw': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1885,7 +1876,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuinfo': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1925,7 +1915,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuimage': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -1960,7 +1949,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menupphotooxy': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2016,7 +2004,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuquotes': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2055,7 +2042,6 @@ renderLargerThumbnail: true
 }
 break
 case 'menuislam': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2089,7 +2075,6 @@ renderLargerThumbnail: true
 }
 break
 case 'menudownload': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2133,7 +2118,6 @@ renderLargerThumbnail: true
 }
 break
 case 'menuaticker': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2174,7 +2158,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuopenai': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2204,7 +2187,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuasupan': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2235,7 +2217,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menunews': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2279,7 +2260,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuprimbon': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2338,7 +2318,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuanime': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2429,7 +2408,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menustore': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2472,7 +2450,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menureseler': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2508,7 +2485,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menupanel': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2553,7 +2529,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menuother': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2608,7 +2583,6 @@ renderLargerThumbnail: true
 }
 break 
 case 'menumenfess': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -2643,7 +2617,6 @@ break
 ////MAIN ALL MENU 
 case 'all': 
 case 'allmenu': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let all = `
@@ -3214,14 +3187,12 @@ renderLargerThumbnail: true
 break 
 //menu Alquran
 case 'sholawat': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 rvn = fs.readFileSync(`./media/audio/sholawat.mp3`)
 zyko.sendMessage(m.chat, { audio: rvn, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 }
 break
 case 'salat':
 case 'jadwalsholat': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!text) return reply(`Use example ${prefix}${command} semarang`)
 const res = await jadwalsholat(text)
 m.reply(`
@@ -3232,7 +3203,6 @@ ${Object.entries(res.today).map(([name, data]) => `*Sholat ${name}:* ${data}`).j
 }
 break
 case 'niatsholat': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let niatsolat = JSON.stringify(global.niatsolat)
 let json = JSON.parse(niatsolat)
 let data = json.result.data.map((v, i) => `${i + 1}. ${v.niat}\n${v.arabic}\n${v.latin}\n${v.translation_id}`).join('\n\n')
@@ -3243,7 +3213,6 @@ m.reply(contoh + data + anjuran)
 }
 break
 case 'alquran': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 if (!text) return reply(`Contoh:\n${prefix + command} 1\n\nMaka hasilnya adalah surah Al-Fatihah ayat beserta audionya, dan ayatnya 1 aja`)
 
@@ -3282,7 +3251,6 @@ reply('Terjadi kesalahan saat mengambil data Al-Quran.')
 }
 break;
 case 'asmaulhusna': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 const anjuran = `
 
 Dari Abu hurarirah radhiallahu anhu, Rasulullah Saw bersabda: "إِنَّ لِلَّهِ تَعَالَى تِسْعَةً وَتِسْعِينَ اسْمًا، مِائَةٌ إِلَّا وَاحِدًا، مَنْ أَحْصَاهَا دخل الجنة، وهو وتر يُحِبُّ الْوِتْرَ"
@@ -3307,7 +3275,6 @@ break
 case 'ahegao': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(ahegao), null, `Nih *${pushname}*`, m)
 }
@@ -3315,7 +3282,6 @@ break
 case 'animeass': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(animeass), null, `Nih *${pushname}*`, m)
 }
@@ -3323,7 +3289,6 @@ break
 case 'animebdsm': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(animebdsm), null, `Nih *${pushname}*`, m)
@@ -3332,7 +3297,6 @@ break
 case 'animeblowjob': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(animeblowjob), null, `Nih *${pushname}*`, m)
@@ -3341,7 +3305,6 @@ break
 case '18csply': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 let url = cosplay[Math.floor(Math.random() * cosplay.length)]
@@ -3352,7 +3315,6 @@ break
 case 'cuckold': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
  zyko.sendFile(sender, pickRandom(cuckold), null, `Nih *${pushname}*`, m)
@@ -3361,7 +3323,6 @@ break
 case 'animecum': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
   zyko.sendFile(sender, pickRandom(animecum), null, `Nih *${pushname}*`, m)
@@ -3370,7 +3331,6 @@ break
 case 'ero': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
   zyko.sendFile(sender, pickRandom(ero), null, `Nih *${pushname}*`, m)
@@ -3379,7 +3339,6 @@ break
 case 'femdom': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(femdom), null, `Nih *${pushname}*`, m)
@@ -3388,7 +3347,6 @@ break
 case 'foot': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(foot), null, `Nih *${pushname}*`, m)
@@ -3397,7 +3355,6 @@ break
 case 'gangbang': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(gangbang), null, `Nih *${pushname}*`, m)
@@ -3406,7 +3363,6 @@ break
 case 'glasses': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(glasses), null, `Nih *${pushname}*`, m)
@@ -3415,7 +3371,6 @@ break
 case 'hentai': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(m.sender, pickRandom(hentai), null, `Nih *${pushname}*`, m)
@@ -3424,7 +3379,6 @@ break
 case 'vidhentai': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 let cr = await xhentai(text);
@@ -3444,7 +3398,6 @@ break
 case 'hinata': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
  zyko.sendFile(sender, pickRandom(hinata), null, `Nih *${pushname}*`, m)
@@ -3453,7 +3406,6 @@ break
 case 'hnt_gifs': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(hnt_gifs), null, `Nih *${pushname}*`, m)
@@ -3462,7 +3414,6 @@ zyko.sendFile(sender, pickRandom(hnt_gifs), null, `Nih *${pushname}*`, m)
 break
 case 'kodenuklir': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
   reply(`
@@ -3962,7 +3913,6 @@ break
 case 'konachan': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(konachan), null, `Nih *${pushname}*`, m)
@@ -3971,7 +3921,6 @@ break
 case 'manga': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(manga), null, `Nih *${pushname}*`, m)
@@ -3980,7 +3929,6 @@ break
 case 'masturbation': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(masturbation), null, `Nih *${pushname}*`, m)
@@ -3989,7 +3937,6 @@ zyko.sendFile(sender, pickRandom(masturbation), null, `Nih *${pushname}*`, m)
 break
 case 'nuklir': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let konuk = `
@@ -4090,7 +4037,6 @@ break
 case 'ometv': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
   zyko.sendFile(sender, pickRandom(ometv), null, `Nih *${pushname}*`, m)
@@ -4099,7 +4045,6 @@ break
 case 'orgy': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(orgy), null, `Nih *${pushname}*`, m)
@@ -4108,7 +4053,6 @@ break
 case 'paptt': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 let url = paptt[Math.floor(Math.random() * paptt.length)]
@@ -4118,7 +4062,6 @@ break
 case 'pussy': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
 zyko.sendFile(sender, pickRandom(pussy), null, `Nih *${pushname}*`, m)
@@ -4127,7 +4070,6 @@ break
 case 'rule34': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)	
 if (!text) return reply(`Use example ${prefix}${command} Sagiri`)
@@ -4138,7 +4080,6 @@ break
 case 'viral': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
   zyko.sendFile(m.sender, pickRandom(viral), 'mp4', `Nih *${pushname}*`, m)
@@ -4149,7 +4090,6 @@ break
 case 'yuri': {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 reply(`_Botz Telah Mengirimkan ${command} ke private chat_`)
  zyko.sendFile(sender, pickRandom(yuri), 'image.jpg', `Nih *${pushname}*`, m)
 }
@@ -4183,7 +4123,6 @@ case 'naturetypography':
 case 'quotesunder':
 case 'shinetext':{
 //if (!isPrem) return replyprem(mess.premium)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!text) return m.reply(`Example : ${prefix + command} zyko`) 
 m.reply(mess.wait)
 let link
@@ -4220,7 +4159,6 @@ zyko.sendMessage(m.chat, { image: { url: dehe }, caption: `Done` }, { quoted: m 
 break;
 ///menu image
 case 'gunung': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let g = await fetch(`https://raw.githubusercontent.com/inirey/RESTAPI/master/data/Mountain.json`)
 let f = await g.json()
 let a = f[Math.floor(Math.random() * f.length)]
@@ -4228,7 +4166,6 @@ zyko.sendFile(m.chat, a, 'hengkel.jpg', 'Gunung', m)
 }
 break
 case 'hacker': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
  let g = await fetch(`https://raw.githubusercontent.com/inirey/RESTAPI/master/data/hekel.json`)
 let f = await g.json()
 let a = f[Math.floor(Math.random() * f.length)]
@@ -4236,7 +4173,6 @@ zyko.sendFile(m.chat, a, 'hengkel.jpg', 'hacker', m)
 }
 break
 case 'wptechnology': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
  let g = await fetch(`https://raw.githubusercontent.com/inirey/RESTAPI/master/data/Technology.json`)
 let f = await g.json()
@@ -4246,7 +4182,6 @@ zyko.sendFile(m.chat, a, 'wpgame.jpg', 'Wallpaper technology', m)
 break
 case 'wallpaper2':
 case 'wallpaper': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 if (!text) return reply(`Use example ${prefix}${command} Minecraft`)
 const res = await (/2/.test(command) ? wallpaperv2 : wallpaper)(text)
@@ -4255,7 +4190,6 @@ zyko.sendFile(m.chat, img, 'wallpaper.jpg', `Result from *${text}*`, m)
 }
 break
 case 'wpaesthetic': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let g = await fetch(`https://raw.githubusercontent.com/inirey/RESTAPI/master/data/aesthetic.json`)
 let f = await g.json()
@@ -4264,7 +4198,6 @@ zyko.sendFile(m.chat, a, 'wpaesthetic.jpg', 'Wallpaper Aesthetic', m)
 }
 break
 case 'wpgame': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
  let g = await fetch(`https://raw.githubusercontent.com/inirey/RESTAPI/master/data/GameWallp.json`)
 let f = await g.json()
@@ -4276,7 +4209,6 @@ break
 case 'confess2':
 case 'menfess2': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let [number, pesan] = text.split `|`
@@ -4316,7 +4248,6 @@ break
 case 'confess':
 case 'menfess': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!args || !args[0]) return reply(`Silahkan masukan pesannya\nContoh Penggunaan: ${prefix + command} ${global.nomerown} pesan untuknya`)
@@ -4360,7 +4291,6 @@ await reply(suks)
 break
 //Menu quotes
 case 'bacot': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let randomBacot = bacot[Math.floor(Math.random() * bacot.length)]
 let caption = `Quotes bacot:\n${randomBacot}` 
@@ -4368,7 +4298,6 @@ m.reply(caption)
 }
 break
 case 'bucin': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let cin = await bucin()
 //let nth = '❲ *Bᴜᴄɪɴ* ❳'
@@ -4376,14 +4305,12 @@ m.reply(`*_QUOTES_*\n❲ *Bᴜᴄɪɴ* ❳\n❏ ${cin}`)
 }
 break
 case 'fakta': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let fakta = pickRandom(faktaa)
 reply(fakta)
 }
 break
 case 'q-islam': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 let caption = `Quotes Islam:\n${randomQuote}` 
@@ -4391,7 +4318,6 @@ m.reply(caption)
 }
 break
 case 'pantun': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let cin = `${pickRandom(global.pantun)}`
 let nth = '❲ *Pᴀɴᴛᴜɴ* ❳'
@@ -4400,20 +4326,17 @@ m.reply(cin)
 break
 case 'vidiogalau': 
 case 'vgalau': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 zyko.sendFile(m.chat, pickRandom(galau), null, `Nih *${pushname}* Video Galaunya..`, m)
 }
 break
 case 'renungan': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 await zyko.sendFile(m.chat, pickRandom(global.renungan), 'renungan.jpeg', 'Nih renunganmu, jangan lupa dijadikan pelajaran yah buat masa depan nanti...', m)
 }
 break
 case 'motivasi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let motivasii = pickRandom(global.motivasi)
@@ -4432,7 +4355,6 @@ thumbnail: thumb
 break
 case 'dare': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let img = "https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg"
@@ -4443,7 +4365,6 @@ zyko.sendFile(m.chat, img, "dare.png", `*── 「 DARE 」 ──*\n\n${der}`,
 break
 case 'truth': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let img = "https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg"
@@ -4457,7 +4378,6 @@ break
 //menu rpg
 case 'nguli': {
 if (!m.isGroup) return reply(mess.group)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 if (new Date - global.db.data.users[m.sender].lastnguli > 86400000) {
 global.db.data.users[m.sender].limit += 10
@@ -4468,7 +4388,6 @@ global.db.data.users[m.sender].lastnguli = new Date * 1
 break
 case 'mulung': {
 if (!m.isGroup) return reply(mess.group)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let time = global.db.data.users[m.sender].lastmulung + 1800000
 if (new Date - global.db.data.users[m.sender].lastmulung< 1800000) return `Anda sudah lelah untuk mulung\nTunggu selama ${msToTime(time - new Date())} lagi`
@@ -4499,7 +4418,6 @@ user.lastmonthly = new Date * 1
 break
 case 'premgift': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (args.length == 0) return zyko.sendText(m.chat, `Harap masukan Kode FreeGiftmu!`, m)
 if (args[0] == 'OshdnpGaka' || args[0] == 'PagpqvUac' || args[0] == '91hakHcwo' || args[0] == 'A820bdoqP') {
 if (new Date - global.db.data.users[m.sender].lastgift > 86400000) {
@@ -4520,7 +4438,6 @@ zyko.sendText(m.chat, `*「 KODE FREE TIDAK VALID 」*\n\nSilahkan belinya terle
 }
 break
 case 'weekly': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 let user = global.db.data.users[m.sender]
 //let cooldown = cooldown
@@ -4568,7 +4485,6 @@ return m.reply(`You sold *${total}* ${global.rpg.emoticon(item)}${item}`)
 break
 case 'work':
 case 'petualang': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 if (!m.isGroup) return reply(mess.group)
 let __timers = (new Date - global.db.data.users[m.sender].lastadventure)
@@ -4659,7 +4575,6 @@ reply(`Sukses menarik sebesar ${count} Money 💹`)
 break
 case 'bank': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let user = global.db.data.users[m.sender]
@@ -4687,7 +4602,6 @@ renderLargerThumbnail: true
 break
 case 'nabung': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let user = global.db.data.users[m.sender]
@@ -4706,7 +4620,6 @@ reply(`Sukses menabung sebesar ${count} Money 💹`)
 break
 case "inventori": {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let teks = `*── 「 INVENTORI 」 ──*
@@ -4751,7 +4664,6 @@ break
 
 case "berkebun": {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 const timeout = 1800000
 let angguru = global.db.data.users[m.sender].bibitanggur
 let apelu = global.db.data.users[m.sender].bibitapel
@@ -4796,7 +4708,6 @@ reply(`*Waktunya berkebun lagi kak 😄*`)
 break
 case "bonus": {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (new Date - global.db.data.users[m.sender].lastclaim > 86400000) {
 reply(`Selamat kamu mendapatkan :\n\n• Uang : 50000`)
 global.db.data.users[m.sender].money += 50000
@@ -4807,7 +4718,6 @@ break
 case "merampok": {
 
 if (!isPremium) return reply(mess.premium);
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 const timeout = 1800000
 let time = global.db.data.users[m.sender].lastmulung + 604800000
 if (new Date - global.db.data.users[m.sender].lastmulung< 604800000) return reply(`*Kamu sudah merampok!*\n\nTunggu selama ${msToTime(time - new Date())} lagi`)
@@ -4827,7 +4737,6 @@ break
 //menu news
 case 'cnn-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await CNNNews()
@@ -4845,7 +4754,6 @@ break;
 } 
 case 'sindo-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await SindoNews()
@@ -4864,7 +4772,6 @@ break;
 }
 case 'fajar-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await FajarNews();
@@ -4887,7 +4794,6 @@ break;
 }
 case 'jalantikus-meme': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await JalanTikusMeme();
@@ -4899,7 +4805,6 @@ break;
 }
 case 'merdeka-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await MerdekaNews();
@@ -4920,7 +4825,6 @@ break;
 }
 case 'cnbc-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await CNBCNews()
@@ -4939,7 +4843,6 @@ break;
 }
 case 'tribun-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await TribunNews()
@@ -4959,7 +4862,6 @@ break;
 }
 case 'indozone-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await IndozoneNews()
@@ -4979,7 +4881,6 @@ break;
 }
 case 'detik-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await DetikNews()
@@ -4998,7 +4899,6 @@ break;
 }
 case 'daily-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await DailyNews()
@@ -5016,7 +4916,6 @@ break;
 }
 case 'okezone-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await OkezoneNews()
@@ -5035,7 +4934,6 @@ break;
 }
 case 'tempo-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await TempoNews()
@@ -5054,7 +4952,6 @@ break;
 }
 case 'antara-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await AntaraNews()
@@ -5074,7 +4971,6 @@ break
 }
 case 'kontan-news': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await KontanNews();
@@ -5131,7 +5027,6 @@ case 'masalah':
 case 'report':
 case 'lapor':
 case 'bug': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!text) return reply(`kalo kamu nemu pesan eror, lapor pake perintah ini\n\ncontoh:\n${prefix + command} selamat siang owner, sy menemukan eror seperti berikut <copy/tag pesan erornya>`)
 let buy = (`*_${command}_*\n\nDari : *@${m.sender.split`@`[0]}*\n\nPesan : ${text}\n`)
 zyko.sendMessage(`${jasa}@s.whatsapp.net`, { text: `${buy}`, mentions: [ `${sender.split('@')[0]}@s.whatsapp.net` ]}, { quoted: m })
@@ -5248,7 +5143,6 @@ reply(finish)
 break
 case 'speedtest': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 reply('Testing Speed...')
@@ -5275,14 +5169,12 @@ break
 case 'totalfitur':
 case 'fitur': 
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 reply(`Total Bot Features Are ${totalFitur()}`)
 break
 case 'ping': case 'speed': case 'botstatus': case 'statusbot': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 const used = process.memoryUsage()
@@ -5333,7 +5225,6 @@ m.reply(respon)
 break
 case 'runtime': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let loo = `*Bot Telah Online Selama*\n*${runtime(process.uptime())}*`
@@ -5368,7 +5259,6 @@ zyko.sendFile(m.chat, pp, null, str, fkontak)
 }
 break
 case 'tomoney': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let user = global.db.data.users[m.sender]
 let count = command.replace(/^tomoney/i, '')
 count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
@@ -5439,7 +5329,6 @@ break
 case 'ceklimit': 
 case 'checklimit': 
 case 'limit':{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 reply('Your Limit: ' + (db.data.users[m.sender].limit))
@@ -5447,7 +5336,6 @@ reply('Your Limit: ' + (db.data.users[m.sender].limit))
 break
 //Menu x main
 case 'afk':
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!m.isGroup) return reply(mess.group)
 if (isAfkOn) return reply(`${pushname} Sudah Afk Sebelumnya`)
 let reason = text ? text : 'Nothing.'
@@ -5456,7 +5344,6 @@ reply(`@${m.sender.split('@')[0]} Sedang AFK\nDengan Alasan : ${reason}`)
 break
 /// menu game
 case 'tebakangka': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let bonusExp = Math.floor(Math.random() * 100)
 let bonusMoney = Math.floor(Math.random() * 1000)
 if (!args[0]) return zyko.sendText(m.chat, `Harap masukkan angka tebakanmu`, m)
@@ -5473,13 +5360,11 @@ reply(result)
 }
 break
 case "dadu": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 const da = [ "https://tinyurl.com/gdd01", "https://tinyurl.com/gdd02", "https://tinyurl.com/gdd003", "https://tinyurl.com/gdd004", "https://tinyurl.com/gdd05", "https://tinyurl.com/gdd006" ];
 zyko.sendFile(m.chat, pickRandom(da), "dado.webp", "", m)
 }
 break
 case "slot": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 try {
 let _spin1 = pickRandom(['1', '2', '3', '4', '5']) 
 let _spin2 = pickRandom(['1', '2', '3', '4', '5'])
@@ -5531,7 +5416,6 @@ reply(mess.error.api)
 }
 break
 case "suit": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let salah = `Example: ${prefix+command} gunting\n\n*Pilihan yang tersedia :*\nBatu, Gunting, Kertas`
 if (!text) return reply(salah)
 var astro = Math.random()
@@ -5568,7 +5452,6 @@ return reply(salah)
 }
 break
 case "asahotak": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (asahotak[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: asahotak[m.chat][0] })
 var anu = await bochil.asahotak()
 console.log("Jawaban : " + anu.jawaban)
@@ -5591,7 +5474,6 @@ delete asahotak[m.chat]
 }
 break
 case "caklontong": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (caklontong[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: caklontong[m.chat][0] })
 var anu = await bochil.caklontong()
 console.log("Jawaban : " + anu.jawaban)
@@ -5614,7 +5496,6 @@ delete caklontong[m.chat]
 }
 break
 case "kuismath": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (kuismath[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: kuismath[m.chat][0] })
 let { genMath, modes } = require("./lib/math");
 if (!text) return reply(`*Example: ${prefix+command} noob*\n\nMode : ${Object.keys(modes).join(" | ")}`.trim(), )
@@ -5640,7 +5521,6 @@ delete kuismath[m.chat]
 }
 break
 case "siapakahaku": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (siapakahaku[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: siapakahaku[m.chat][0] })
 var anu = await bochil.siapakahaku()
 console.log("Jawaban : " + anu.jawaban)
@@ -5663,7 +5543,6 @@ delete siapakahaku[m.chat]
 }
 break
 case "susunkata": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (susunkata[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: susunkata[m.chat][0] })
 var anu = await bochil.susunkata()
 console.log("Jawaban : " + anu.jawaban)
@@ -5702,7 +5581,6 @@ delete tebakgambar[m.chat]
 }
 break
 case "tebakkata": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (tebakkata[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: tebakkata[m.chat][0] })
 var anu = await bochil.tebakkata()
 console.log("Jawaban : " + anu.jawaban)
@@ -5725,7 +5603,6 @@ delete tebakkata[m.chat]
 }
 break
 case "tebaklagu": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (tebaklagu[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: tebaklagu[m.chat][0] })
 let poin = 1000
 let src = await fetchJson("https://raw.githubusercontent.com/Aiinne/scrape/main/tebaklagu.json")
@@ -5752,7 +5629,6 @@ delete tebaklagu[m.chat]
 }
 break
 case "tebaklirik": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (tebaklirik[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: tebaklirik[m.chat][0] })
 var anu = await bochil.tebaklirik()
 console.log("Jawaban : " + anu.jawaban)
@@ -5768,7 +5644,6 @@ delete tebaklirik[m.chat]
 }
 break
 case "tebaktebakan": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (tebaktebakan[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: tebaktebakan[m.chat][0] })
 var anu = await bochil.tebaktebakan()
 console.log("Jawaban : " + anu.jawaban)
@@ -5784,7 +5659,6 @@ delete tebaktebakan[m.chat]
 }
 break
 case "tekateki": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (tekateki[m.chat]) return zyko.sendMessage(m.chat, { text: "Soal ini belum selesai" }, { quoted: tekateki[m.chat][0] })
 var anu = await bochil.tekateki()
 console.log("Jawaban : " + anu.jawaban)
@@ -5803,7 +5677,6 @@ break
 case 'style': {
 if (!q) return reply('masukan text nya su')
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 zyko.sendText(m.chat, Object.entries(await stylizeText(text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text)).map(([name, value]) => `*${name}*\n${value}`).join`\n\n`, m)
@@ -5854,7 +5727,6 @@ fs.unlinkSync(ran)
 break
 case 'npmsearch': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply('Input Query')
@@ -5869,7 +5741,6 @@ m.reply(txt)
 break
 case 'jadwaltv': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply('Input Query')
@@ -5879,7 +5750,6 @@ m.reply(`Jadwal TV ${res.channel}\n\n${txt}`)
 }
 break
 case 'react': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!m.quoted) return reply('🚩 Reply Chat!')
 if (text.length > 2) return reply('🚩Only For 1 Emoji!')
 if (!text) return reply(`📍 Usage Example :\n${prefix}react 🗿`)
@@ -5904,7 +5774,6 @@ reply(l + readmore + r)
 break
 case 'tourl': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 await m.reply(mess.wait)
@@ -5923,7 +5792,6 @@ await fs.unlinkSync(media)
 }
 break
 case "createqr": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 2) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 2
 if (!isPremium) return m.reply(mess.premium)
@@ -5935,7 +5803,6 @@ zyko.sendMessage(from, { image: data, caption: `Sukses Kak` }, { quoted: m })
 }
 break
 case "detectqr": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 2) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 2
 if (!isPremium) return m.reply(mess.premium)
@@ -5951,7 +5818,6 @@ reply(`Reply Image Yang Ada Qr Nya`)
 }
 break 
 case "tts": case "gtts": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let sp = "•"
 if (!text.includes(" ")) return reply(`*Example : ${prefix+command} kodebahasa text*\n\n${sp} af: Afrikaans,
 ${sp} sq: Albanian
@@ -6025,7 +5891,6 @@ fs.unlinkSync(rano)
 break
 case "getpp": {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (Input) {
@@ -6048,7 +5913,6 @@ break
 case 'fetch':
 case 'get': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? zyko.user.jid : m.sender
@@ -6082,7 +5946,6 @@ m.reply(txt.slice(0, 65536) + '')
 break
 //Menu Internet
 case 'jarak': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 var [text1, text2] = text.split`|`
 if (!(text1 && text2)) return reply(`🚩 *Example:* ${prefix+command} Sukabumi|bandung`)
@@ -6129,7 +5992,6 @@ return reply('Format salah, hanya 0-9 dan Simbol -, +, *, /, ×, ÷, π, e, (, )
 break
 case 'darkjoke': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 const res = await Darkjokes()
@@ -6139,7 +6001,6 @@ break
 case 'lyrics':
 case 'lirik': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
@@ -6160,7 +6021,6 @@ break
 case 'ppcouple': 
 case 'ppcp': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let data = await (await fetch('https://raw.githubusercontent.com/KazukoGans/database/main/anime/ppcouple.json')).json()
@@ -6172,7 +6032,6 @@ await zyko.sendFile(m.chat, ciwi, '', '♀️', m)
 }
 break
 case "translate": {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 const { translate } = require("@vitalets/google-translate-api")
 let lang, text;
 if (args.length >= 2) {
@@ -6199,7 +6058,6 @@ fs.unlinkSync(rano)
 break
 case 'pinterest': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command}`)
@@ -6213,7 +6071,6 @@ zyko.sendMessage(m.chat, { image: { url: result}, caption: mess.done}, { quoted:
 break
 case 'google': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} pisang`)
@@ -6233,7 +6090,6 @@ reply(teks)
 break
 case 'gimage': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} zykobotz`)
@@ -6251,7 +6107,6 @@ break
 case 'kopi':
 case 'coffee': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await fetch("https://coffee.alexflipnote.dev/random.json");
@@ -6266,7 +6121,6 @@ return reply(json)
 break
 case 'katanime': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch('https://katanime.vercel.app/api/getrandom?limit=1'))
@@ -6279,7 +6133,6 @@ m.reply(`${indo}\n\n${character}\n${anime}`)
 break
 case 'meme': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await fetch('https://raw.githubusercontent.com/HasamiAini/wabot_takagisan/main/whatsapp%20bot%20takagisan/whatsapp%20bot%20takagisan/lib/memeindo.json')
@@ -6290,7 +6143,6 @@ zyko.sendMessage(m.chat, { image: { url: url.image }, caption: 'Nih Memeindo' },
 break
 case 'githubsearch': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
   if (!q) return reply(`Contoh:\n${prefix + command} stikerinbot`);
@@ -6322,7 +6174,6 @@ break;
 case 'cuaca':
 case 'weather': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
   if (!q) return reply(`Penggunaan:\n${prefix + command} <teks>\n\nContoh:\n${prefix + command} Sukabumi`)
@@ -6344,7 +6195,6 @@ Angin: ${json.wind.speed} km/jam
 break;
 case 'cecanukhty': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let bpink = await fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/ukhty.txt')
@@ -6357,7 +6207,6 @@ zyko.sendMessage(m.chat, { image: { url: img }, caption: '© Nih cecanukhty, jan
 break
 case 'exo': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let bpink = await fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/exo.txt')
@@ -6370,7 +6219,6 @@ zyko.sendMessage(m.chat, { image: { url: img }, caption: '© Nih exo, jangan lup
 break
 case 'blackpink': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let bpink = await fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/blekping.txt')
@@ -6383,7 +6231,6 @@ zyko.sendMessage(m.chat, { image: { url: img }, caption: '© Nih Blackpinknya, j
 break;
 case 'bts': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let bts = await fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/batues.txt')
@@ -6396,7 +6243,6 @@ zyko.sendMessage(m.chat, { image: { url: img }, caption: '© Nih bts, jangan lup
 break;
 case 'cecanrandom': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let arr = await fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/cecan.txt')
@@ -6412,7 +6258,6 @@ case 'filebokep':  {
 if (!m.isGroup) return reply(mess.group)
 if (!isPremium) return reply(mess.premium)
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 await m.reply('_Bot Telah Mengirimkan Ke private chat_')
@@ -6422,7 +6267,6 @@ break
 case 'asupan': {
 if (!isPremium) return m.reply(mess.premium)
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 reply(`_hallo ${pushname} asupan telah bot kirim ke private chat_`)
@@ -6432,14 +6276,12 @@ zyko.sendMessage(sender, { video: { url: pickRandom(global.asupan) }, caption: w
 break
 //Menu Fun
 case 'cantikcek': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 reply(`${pickRandom(cantikk)}`)
 }
 break
 case 'namaninja': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 m.reply(teks.replace(/[a-z]/gi, v => {
 return {
@@ -6474,7 +6316,6 @@ return {
 }
 break
 case 'cekmemek': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 if (!text) return reply('Ketik Namanya Tolol!')
 reply(`
@@ -6488,7 +6329,6 @@ reply(`
 }
 break
 case 'gaycek': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 reply(`“${pickRandom(global.gay)}”`, m)
@@ -6532,7 +6372,6 @@ case 'cacat':
 case 'yatim':
 case 'piatu': {
 if (!m.isGroup) return m.reply(mess.group);
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 let member = participants.map(u => u.id).filter(v => v !== zyko.user.jid)
 let org = member[Math.floor(Math.random() * member.length)];
 zyko.sendMessage(m.chat, { text: `anak ${command} di sini adalah @${org.split('@')[0]}`, mentions: [org] }, { quoted: m })
@@ -6540,7 +6379,6 @@ zyko.sendMessage(m.chat, { text: `anak ${command} di sini adalah @${org.split('@
 break
 case 'apakah': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
@@ -6551,7 +6389,6 @@ reply(`Pertanyaan : Apakah ${q}\nJawaban : ${kah}`)
 break
 case 'bisakah': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
@@ -6562,7 +6399,6 @@ reply(`Pertanyaan : Apakah ${q}\nJawaban : ${ga}`)
 break
 case 'bagaimanakah': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
@@ -6573,7 +6409,6 @@ reply(`Pertanyaan : Apakah ${q}\nJawaban : ${ya}`)
 break
 case 'rate': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} Gambar aku`)
@@ -6585,7 +6420,6 @@ break
 case 'gantengcek':
 case 'cekganteng': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Owner`)
@@ -6597,7 +6431,6 @@ break
 case 'cantikcek':
 case 'cekcantik': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Akame`)
@@ -6613,7 +6446,6 @@ case 'cekgay':
 case 'lesbicek':
 case 'ceklesbi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} ${pushname}`)
@@ -6624,7 +6456,6 @@ reply(`Nama : ${q}\nJawaban : *${sange}%*`)
 break
 case 'kapankah': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Penggunaan ${command} Pertanyaan\n\nContoh : ${command} Saya Mati`)
@@ -6635,7 +6466,6 @@ reply(`Pertanyaan : ${q}\nJawaban : *${kapankah}*`)
 break
 case 'wangy': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Contoh : .wangy Riy`)
@@ -6646,7 +6476,6 @@ reply(awikwok)
 break
 case 'cekmati': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Invalid!\n\nYg mau di cek siapa kontol?`)
@@ -6668,7 +6497,6 @@ break
 //Menu Primbon
 case 'nomerhoki': case 'nomorhoki': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!Number(text)) return reply(`Contoh : ${prefix + command} 6288292024190`)
@@ -6679,7 +6507,6 @@ zyko.sendText(m.chat, `• *Nomor HP :* ${anu.message.nomer_hp}\n• *Angka Shuz
 break
 case 'artimimpi': case 'tafsirmimpi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} belanja`)
@@ -6690,7 +6517,6 @@ zyko.sendText(m.chat, `• *Mimpi :* ${anu.message.mimpi}\n• *Arti :* ${anu.me
 break
 case 'ramalanjodoh': case 'ramaljodoh': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
@@ -6702,7 +6528,6 @@ zyko.sendText(m.chat, `• *Nama Anda :* ${anu.message.nama_anda.nama}\n• *Lah
 break
 case 'ramalanjodohbali': case 'ramaljodohbali': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
@@ -6714,7 +6539,6 @@ zyko.sendText(m.chat, `• *Nama Anda :* ${anu.message.nama_anda.nama}\n• *Lah
 break
 case 'suamiistri': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
@@ -6726,7 +6550,6 @@ zyko.sendText(m.chat, `• *Nama Suami :* ${anu.message.suami.nama}\n• *Lahir 
 break
 case 'ramalancinta': case 'ramalcinta': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
@@ -6738,7 +6561,6 @@ zyko.sendText(m.chat, `• *Nama Anda :* ${anu.message.nama_anda.nama}\n• *Lah
 break
 case 'artinama': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika Ardianta`)
@@ -6749,7 +6571,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Arti :* ${anu.mess
 break
 case 'kecocokannama': case 'cocoknama': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005`)
@@ -6761,7 +6582,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Lahir :* ${anu.mes
 break
 case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika|Novia`)
@@ -6773,7 +6593,6 @@ zyko.sendImage(m.chat,  anu.message.gambar, `• *Nama Anda :* ${anu.message.nam
 break
 case 'jadianpernikahan': case 'jadiannikah': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 6, 12, 2020`)
@@ -6785,7 +6604,6 @@ zyko.sendText(m.chat, `• *Tanggal Pernikahan :* ${anu.message.tanggal}\n• *k
 break
 case 'sifatusaha': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!ext)return reply(`Contoh : ${prefix+ command} 28, 12, 2021`)
@@ -6797,7 +6615,6 @@ zyko.sendText(m.chat, `• *Lahir :* ${anu.message.hari_lahir}\n• *Usaha :* ${
 break
 case 'rejeki': case 'rezeki': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6809,7 +6626,6 @@ zyko.sendText(m.chat, `• *Lahir :* ${anu.message.hari_lahir}\n• *Rezeki :* $
 break
 case 'pekerjaan': case 'kerja': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6821,7 +6637,6 @@ zyko.sendText(m.chat, `• *Lahir :* ${anu.message.hari_lahir}\n• *Pekerjaan :
 break
 case 'ramalannasib': case 'ramalnasib': case 'nasib': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : 7, 7, 2005`)
@@ -6833,7 +6648,6 @@ zyko.sendText(m.chat, `• *Analisa :* ${anu.message.analisa}\n• *Angka Akar :
 break
 case 'potensipenyakit': case 'penyakit': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6845,7 +6659,6 @@ zyko.sendText(m.chat, `• *Analisa :* ${anu.message.analisa}\n• *Sektor :* ${
 break
 case 'artitarot': case 'tarot': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6857,7 +6670,6 @@ zyko.sendImage(m.chat, anu.message.image, `• *Lahir :* ${anu.message.tgl_lahir
 break
 case 'fengshui': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return `Contoh : ${prefix + command} Dika, 1, 2005\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`
@@ -6869,7 +6681,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Lahir :* ${anu.mes
 break
 case 'haribaik': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6881,7 +6692,6 @@ zyko.sendText(m.chat, `• *Lahir :* ${anu.message.tgl_lahir}\n• *Kala Tinanta
 break
 case 'harisangar': case 'taliwangke': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6893,7 +6703,6 @@ zyko.sendText(m.chat, `• *Lahir :* ${anu.message.tgl_lahir}\n• *Hasil :* ${a
 break
 case 'harinaas': case 'harisial': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6905,7 +6714,6 @@ zyko.sendText(m.chat, `• *Hari Lahir :* ${anu.message.hari_lahir}\n• *Tangga
 break
 case 'nagahari': case 'harinaga': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6917,7 +6725,6 @@ zyko.sendText(m.chat, `• *Hari Lahir :* ${anu.message.hari_lahir}\n• *Tangga
 break
 case 'arahrejeki': case 'arahrezeki': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6929,7 +6736,6 @@ zyko.sendText(m.chat, `• *Hari Lahir :* ${anu.message.hari_lahir}\n• *tangga
 break
 case 'peruntungan': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} DIka, 7, 7, 2005, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
@@ -6941,7 +6747,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Lahir :* ${anu.mes
 break
 case 'weton': case 'wetonjawa': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 7, 7, 2005`)
@@ -6953,7 +6758,6 @@ zyko.sendText(m.chat, `• *Tanggal :* ${anu.message.tanggal}\n• *Jumlah Neptu
 break
 case 'sifat': case 'karakter': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005`)
@@ -6965,7 +6769,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Lahir :* ${anu.mes
 break
 case 'keberuntungan': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} Dika, 7, 7, 2005`)
@@ -6977,7 +6780,6 @@ zyko.sendText(m.chat, `• *Nama :* ${anu.message.nama}\n• *Lahir :* ${anu.mes
 break
 case 'memancing': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 12, 1, 2022`)
@@ -6989,7 +6791,6 @@ zyko.sendText(m.chat, `• *Tanggal :* ${anu.message.tgl_memancing}\n• *Hasil 
 break
 case 'masasubur': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} 12, 1, 2022, 28\n\nNote : ${prefix + command} hari pertama menstruasi, siklus`)
@@ -7001,7 +6802,6 @@ zyko.sendText(m.chat, `• *Hasil :* ${anu.message.result}\n• *Catatan :* ${an
 break
 case 'zodiak': case 'zodiac': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix+ command} 7 7 2005`)
@@ -7039,7 +6839,6 @@ zyko.sendText(m.chat, `• *Zodiak :* ${anu.message.zodiak}\n• *Nomor :* ${anu
 }
 break
 case 'shio': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Contoh : ${prefix + command} tikus\n\nNote : For Detail https://primbon.com/shio.htm`)
@@ -7050,7 +6849,6 @@ zyko.sendText(m.chat, `• *Hasil :* ${anu.message}`, m)
 break
 //MENU Downloader
 case 'apkdl': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Ex: ${prefix + command} https://play.google.com/store/apps/details?id=com.linecorp.LGGRTHN`)
@@ -7060,7 +6858,6 @@ zyko.sendMessage(m.chat, { document: { url: res.download }, mimetype: res.mimety
 }
 break
 case 'facebook': case 'fb': case 'fbdl': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command} https://www.facebook.com/100065164892842/posts/731701032345387/?mibextid=rS40aB7S9Ucbxw6v`)
@@ -7072,7 +6869,6 @@ zyko.sendMessage(m.chat, { video: { url: media.videoUrl}, mimetype: 'video/mp4',
 }
 break
 case 'gitclone': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!args[0]) return reply(`Example user ${prefix}${command} link`)
 if (!regex.test(args[0])) return reply('link salah!')
 let [_, user, repo] = args[0].match(regex) || []
@@ -7085,7 +6881,6 @@ zyko.sendFile(m.chat, url, filename, null, m)
 break
 case 'instagram': 
 case 'ig': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!args[0]) return reply(`🚩 *Example:* ${prefix+command} https://www.instagram.com/reel/Co18PSBAmkh/?igshid=MmJiY2I4NDBkZg==`)
 let res = await fetch(`https://new-api-lorenzo.cyclic.app/api/download/instagram?apikey=YT:LORENZOBOTMD&url=${args[0]}`)
 let data = await res.json()
@@ -7096,7 +6891,6 @@ zyko.sendMessage(m.chat, { video: { url: json.url }, caption: cap }, { quoted: m
 break
 case 'mediafire':
 case 'mf': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!args[0]) return reply('Input URL')
 if (!/https?:\/\/(www\.)?mediafire\.com/.test(args[0])) return reply('Invalid URL')
 let res = await mediafiredl(args[0])
@@ -7107,7 +6901,6 @@ zyko.sendMessage(m.chat, { document: { url: res.url }, fileName: res.filename, m
 }
 break
 case 'play': case 'ytplay': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!q) return reply(`Example : ${prefix + command} coding`)
@@ -7141,7 +6934,6 @@ zyko.sendMessage(m.chat, { audio: { url: anu.url }, mimetype: 'audio/mpeg', file
 }
 break
 case 'yts': case 'ytsearch': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command} story wa anime`)
@@ -7156,7 +6948,6 @@ zyko.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: te
 break
 //=================================================
 case 'ytmp3': case 'youtubemp3': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/shorts/Akm3ijSj5Xc?si=2bWdhUa4dhAxLiV0`)
@@ -7166,7 +6957,6 @@ downloadMp3(text)
 break
 //=================================================
 case 'ytmp4': case 'youtubemp4': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/shorts/Akm3ijSj5Xc?si=2bWdhUa4dhAxLiV0`)
@@ -7179,7 +6969,6 @@ zyko.sendMessage(m.chat, { video: { url: media.dl_url }, mimetype: 'video/mp4', 
 break
 //=================================================
 case 'getmusic': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Example : ${prefix + command} 1`)
@@ -7193,7 +6982,6 @@ downloadMp3(urls[text - 1])
 break
 //=================================================
 case 'getvideo': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let { ytv } = require('./lib/scraper/y2mate')
@@ -7210,7 +6998,6 @@ zyko.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4',
 break
 //=================================================
 case "ytreels": case "youtubereels":{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return m.reply('Masukan Link Nya!!!')
@@ -7220,7 +7007,6 @@ downloadMp4(text)
 break
 case 'tiktokmp3':
 case 'tiktokaudio':{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return m.reply( `Example : ${prefix + command} link`)
@@ -7232,7 +7018,6 @@ zyko.sendMessage(m.chat, { audio: { url: data.audio }, mimetype: 'audio/mp4' }, 
 }
 break
 case 'tiktok': case 'tt': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 2) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 2
 if (!q) return reply(`🚩 *Example:* ${prefix+command} https://vt.tiktok.com/ZSNCXnAUj/`)
@@ -7252,7 +7037,6 @@ zyko.sendMessage(m.chat, { video: { url: cer.download.nowm }, caption: cap }, { 
 break
 case 'ss': case 'ssweb':{
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!isOwner) return reply(mess.owner)
@@ -7282,7 +7066,6 @@ break
 //Menu Anime
 case 'otakudesu': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!text) return reply(`Use example ${prefix}${command} Anime`)
@@ -7313,7 +7096,6 @@ break
 case 'randomanime':
 case 'animerandom': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/random.txt')
@@ -7325,7 +7107,6 @@ let cita = arr[Math.floor(Math.random() * arr.length)]
 break
 case 'simpown': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let url = gamanaufal[Math.floor(Math.random() * gamanaufal.length)]
@@ -7335,7 +7116,6 @@ break
 case 'genshin':
 case 'charagi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let list = ['amber','ayaka','baizhu','barbara','beidou','bennett','childe','chongyun','cyno','dainsleif','diluc','diona','fischl','ganyu','jean','kaeya','keqing','klee','lisa','mona','ningguang','noelle','qiqi','razor','sucrose','venti','xiangling','xiao','xingqiu','xinyan','zhongli']
@@ -7361,7 +7141,6 @@ zyko.sendMessage(m.chat, { image: { url: image }, caption: capt }, { quoted: m})
 break
 case 'akira': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/akira.json`)).json()
@@ -7371,7 +7150,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'akiyama': { 
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/akiyama.json`)).json()
@@ -7381,7 +7159,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'anna': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/ana.json`)).json()
@@ -7391,7 +7168,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'asuna': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/asuna.json`)).json()
@@ -7401,7 +7177,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'ayuzawa': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/ayuzawa.json`)).json()
@@ -7411,7 +7186,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'boruto': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/boruto.json`)).json()
@@ -7421,7 +7195,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'chitanda': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/chitanda.json`)).json()
@@ -7431,7 +7204,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'chitoge': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/chitoge.json`)).json()
@@ -7441,7 +7213,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'deidara': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/deidara.json`)).json()
@@ -7451,7 +7222,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'doraemon': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/doraemon.json`)).json()
@@ -7461,7 +7231,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'elaina': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/elaina.json`)).json()
@@ -7471,7 +7240,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'emilia': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/emilia.json`)).json()
@@ -7481,7 +7249,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'asuna': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/asuna.json`)).json()
@@ -7491,7 +7258,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'erza': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/erza.json`)).json()
@@ -7501,7 +7267,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'gremory': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/gremory.json`)).json()
@@ -7511,7 +7276,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'hestia': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/hestia.json`)).json()
@@ -7521,7 +7285,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'hinata': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await ( fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/hinata.json`)).json()
@@ -7531,7 +7294,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'inori': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/inori.json`)).json()
@@ -7541,7 +7303,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'isuzu': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/isuzu.json`)).json()
@@ -7551,7 +7312,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'itachi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/itachi.json`)).json()
@@ -7561,7 +7321,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'itori': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/itori.json`)).json()
@@ -7571,7 +7330,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kaga': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kaga.json`)).json()
@@ -7581,7 +7339,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kagura': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kagura.json`)).json()
@@ -7591,7 +7348,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kakasih': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kakasih.json`)).json()
@@ -7601,7 +7357,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kaori': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kaori.json`)).json()
@@ -7611,7 +7366,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kosaki': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kosaki.json`)).json()
@@ -7621,7 +7375,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'kotori': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kotori.json`)).json()
@@ -7631,7 +7384,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kuriyama': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kuriyama.json`)).json()
@@ -7641,7 +7393,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kuroha': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kuroha.json`)).json()
@@ -7651,7 +7402,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'kurumi': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/kurumi.json`)).json()
@@ -7661,7 +7411,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'loli': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/loli.json`)).json()
@@ -7671,7 +7420,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'madara': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/madara.json`)).json()
@@ -7681,7 +7429,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'mikasa': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/mikasa.json`)).json()
@@ -7691,7 +7438,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'miku': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/miku.json`)).json()
@@ -7701,7 +7447,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'minato': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/minato.json`)).json()
@@ -7711,7 +7456,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'naruto': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/naruto.json`)).json()
@@ -7721,7 +7465,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'natsukawa': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/natsukawa.json`)).json()
@@ -7731,7 +7474,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'neko2': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/neko.json`)).json()
@@ -7742,7 +7484,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'nekohime': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/nekohime.json`)).json()
@@ -7752,7 +7493,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'nezuko': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/nezuko.json`)).json()
@@ -7762,7 +7502,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'nishimiya':  {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/nishimiya.json`)).json()
@@ -7772,7 +7511,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'onepiece': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/onepiece.json`)).json()
@@ -7782,7 +7520,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'pokemon': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/pokemon.json`)).json()
@@ -7792,7 +7529,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'rem': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/rem.json`)).json()
@@ -7802,7 +7538,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'rize': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/rize.json`)).json()
@@ -7812,7 +7547,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'sagiri': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/sagiri.json`)).json()
@@ -7822,7 +7556,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'sakura': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/sakura.json`)).json()
@@ -7832,7 +7565,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'sasuke': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/sasuke.json`)).json()
@@ -7842,7 +7574,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'shina': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/shina.json`)).json()
@@ -7852,7 +7583,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'shinka': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/shinka.json`)).json()
@@ -7862,7 +7592,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'shizuka': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/shizuka.json`)).json()
@@ -7872,7 +7601,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'shota': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/shota.json`)).json()
@@ -7882,7 +7610,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'tomori': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/tomori.json`)).json()
@@ -7892,7 +7619,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break
 case 'toukachan': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/toukachan.json`)).json()
@@ -7902,7 +7628,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'tsunade': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/tsunade.json`)).json()
@@ -7912,7 +7637,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'yatogami': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/yatogami.json`)).json()
@@ -7922,7 +7646,6 @@ zyko.sendMessage(m.chat, { image: { url: cita }, caption: command }, { quoted: m
 break 
 case 'yuki': { 
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 let res = await (await fetch(`https://raw.githubusercontent.com/KazukoGans/database/main/anime/yuki.json`)).json()
@@ -7934,7 +7657,6 @@ break
 case 'toaud': 
 case 'toaudio': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Kirim/Reply Video/Audio Yang Ingin Dijadikan Audio Dengan Caption ${prefix + command}`)
@@ -7947,7 +7669,6 @@ zyko.sendMessage(m.chat, {audio: audio, mimetype: 'audio/mpeg'}, { quoted : m })
 break
 case 'tomp3': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Kirim/Reply Video/Audio Yang Ingin Dijadikan MP3 Dengan Caption ${prefix + command}`)
@@ -7961,7 +7682,6 @@ break
 case 'tovn': 
 case 'toptt': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Reply Video/Audio Yang Ingin Dijadikan VN Dengan Caption ${prefix + command}`)
@@ -7974,7 +7694,6 @@ zyko.sendMessage(m.chat, {audio: audio, mimetype:'audio/mpeg', ptt:true }, {quot
 break
 case 'setexif': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!isOwner) return reply(mess.owner)
@@ -7986,7 +7705,6 @@ reply(`Exif berhasil diubah menjadi\n\n• Packname : ${global.packname}\n• Au
 break
 case 'togif': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!/webp/.test(mime)) return reply(`Reply stiker dengan caption *${prefix + command}*`)
@@ -8000,7 +7718,6 @@ break
 case 'toimage': 
 case 'toimg': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!/webp/.test(mime)) return reply(`Reply sticker dengan caption *${prefix + command}*`)
@@ -8019,7 +7736,6 @@ break
 case 'tomp4': 
 case 'tovideo': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!/webp/.test(mime)) return reply(`Reply stiker dengan caption *${prefix + command}*`)
@@ -8034,7 +7750,6 @@ case 'sticker':
 case 'stiker':
 case 's':{
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!quoted) return reply(`Balas Video/Image Dengan Caption ${prefix + command}`)
@@ -8061,7 +7776,6 @@ return reply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Vide
 break
 case 'smeme':
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
  if (!text) return `Balas Image Dengan Caption ${prefix + command}`
@@ -8076,7 +7790,6 @@ zyko.sendImageAsSticker(m.chat, kaytid, m, { packname: global.packname, author: 
 break
 case 'swm': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 let [teks1, teks2] = text.split`|`
@@ -8099,7 +7812,6 @@ return reply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Vide
 break
 case 'emojimix': {
 
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 let [emoji1, emoji2] = text.split`+`
@@ -8118,7 +7830,6 @@ await fs.unlinkSync(encmedia)
 }
 break
 case 'emojimix2': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!text) return reply(`Contoh : ${prefix + command} 😅`)
@@ -8159,7 +7870,6 @@ break
 //=================================================//
 case 'setcmd': {
 if (!isOwner) return m.reply(mess.owner)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!m.quoted) return reply('Reply Pesan!')
@@ -8180,7 +7890,6 @@ break
 //=================================================//
 case 'delcmd': {
 if (!isOwner) return m.reply(mess.owner)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 if (!m.quoted) return reply('Reply Pesan!')
@@ -8194,7 +7903,6 @@ break
 //=================================================//
 case 'listcmd': {
 if (!isOwner) return m.reply(mess.owner)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1
 let teks = `list cmd`
@@ -8277,7 +7985,6 @@ reply(teks);
 }
 break;
 case 'author': case 'owner': case 'creator': {
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 
 await zyko.sendContact(m.chat, global.owner, m)
 }
@@ -8354,7 +8061,6 @@ fs.writeFileSync('./database/json/owner.json', JSON.stringify(owner))
 reply(`Nomor ${pem} Telah Di Hapus Dari Owner!!!`)
 break
 case 'listown':
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 preom = `*List Owner*\n\nTotal Owner : ${_owner.length}\n`
 var no = 1
 for (let x of owner) {
@@ -8367,7 +8073,6 @@ break
 case 'caritemangc': 
 case 'carikawangc': {
 if (!m.isGroup) return reply(mess.group)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (participants.length === 0) {
 return reply('Tidak ada anggota di grup.');
 }
@@ -8807,7 +8512,6 @@ case 'updatelist':
 break
 case "list": {
 if (!m.isGroup) return reply(mess.group)
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (db_respon_list.length === 0) return reply(`*Belum ada list message di Group ini*`)
 if (!isAlreadyResponListGroup(m.chat, db_respon_list)) return reply(`*Belum ada list message yang terdaftar di Group ini*`)
 let no = 0
@@ -9028,7 +8732,6 @@ zyko.sendMessage(m.chat, { text: `${suks}`, mentions: [suks] }, { quoted: m })
 break
 //MENU SELLER
 case 'addseler': case 'addseller':{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!isOwner) return reply(mess.owner)
@@ -9042,7 +8745,6 @@ reply(`Nomor ${bnnd} Sudah Bisa Akses!!!`)
 }
 break
 case 'delseler': case 'delseller':{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!isOwner) return reply(mess.owner)
@@ -9055,7 +8757,6 @@ reply(`Nomor ${ya} Sudah Tidak Bisa Add Server`)
 }
 break
 case 'listseler': case 'listseller':{
-if (cek("id", m.sender) == null) return reply(mess.notregist)
 if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) 
 db.data.users[m.sender].limit -= 1 
 if (!isOwner) return reply(mess.owner)
